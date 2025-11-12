@@ -1,0 +1,85 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app h1 {
+  color: #646cff;
+  margin-bottom: 2rem;
+}
+
+.navigation {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+}
+
+.navigation p {
+  margin-bottom: 1rem;
+  color: #888;
+}
+
+.practice-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.practice-buttons button {
+  padding: 10px 20px;
+  background-color: #242424;
+  color: white;
+  border: 2px solid #646cff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.practice-buttons button:hover {
+  background-color: #646cff;
+  transform: translateY(-2px);
+}
+
+.practice-buttons button.active {
+  background-color: #646cff;
+  border-color: #535bf2;
+  font-weight: bold;
+}
+
+.practice-area {
+  min-height: 400px;
+  margin: 2rem 0;
+}
+
+.footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  color: #888;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem;
+  }
+
+  .practice-buttons {
+    flex-direction: column;
+  }
+
+  .practice-buttons button {
+    width: 100%;
+  }
+}
